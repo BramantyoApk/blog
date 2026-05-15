@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bramantyo APK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div id="mobile-notice">
+    ⚠️ <strong>Website ini untuk Desktop.</strong>
+    Gunakan <strong>Mode Desktop</strong> di browser kamu untuk tampilan terbaik!
+    <button id="close-notice">✕</button>
+  </div>
+
+  <div class="page">
+    <div class="hero">
+      <!-- <div class="hero-char">
+        <img src="img/hero.webp" alt="Karakter Bramantyo" />
+      </div> -->
+      <div class="hero-text">
+        <h1>Hello! I'm <span>Bramantyo</span></h1>
+        <p>Artist | Developer | Content Creator</p>
+      </div>
+      <div class="cards">
+        <div class="card" onclick="openWin('about')">
+          <div class="card-thumb">
+            <img src="img/card-about.webp" alt="About Me" />
+          </div>
+          <span>About Me</span>
+        </div>
+        <div class="card" onclick="openWin('work')">
+          <div class="card-thumb">
+            <img src="img/card-work.webp" alt="Work" />
+          </div>
+          <span>Work</span>
+        </div>
+        <div class="card" onclick="openWin('contact')">
+          <div class="card-thumb">
+            <img src="img/card-contact.webp" alt="Contact" />
+          </div>
+          <span>Contact</span>
+        </div>
+
+      </div>
+      <div class="social-links">
+        <a href="https://youtube.com/@BramantyoAPK" target="_blank" class="social-icon yt" title="YouTube @BramantyoAPK">
+          <i class="fa-brands fa-square-youtube"></i>
+        </a>
+        <a href="https://instagram.com/bramantyo_apk" target="_blank" class="social-icon ig" title="Instagram bramantyo_apk">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="https://twitter.com/bramanzero" target="_blank" class="social-icon tw" title="Twitter @bramanzero">
+          <i class="fa-brands fa-square-x-twitter"></i>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2026 Bramantyo</p>
+      <p>Websitenya gak niat bikin soalnya sehari jadi</p>
+    </footer>
+  </div>
+
+  <div id="win-about" class="win" onmousedown="bringFront('win-about')">
+    <div class="win-bar" id="winbar-about">
+      <span class="win-title">about_me</span>
+      <button class="win-close" onclick="closeWin('about')">✕</button>
+    </div>
+    <div class="win-body">
+      <div class="about-wrap">
+        <div class="avatar-box" oncontextmenu="return false;">
+          <img src="assets/avatar.webp" alt="Foto Profil" />
+        </div>
+        <div class="about-info">
+          <h3>Bramantyo APK</h3>
+          <p>
+            Halo, Aku Bramantyo arya putra kusuma, seorang
+            artist pemula dan founder dari
+            <strong>TUMMAL PRODUCTION</strong>
+          </p>
+          <p>
+            Saya fokus dalam membuat project digital seperti
+            game, web, dan gambar/komik bergaya anime
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h4>Hobby</h4>
+        <ul>
+          <li>Sport (Volly)</li>
+          <li>Gaming</li>
+          <li>Drawing</li>
+          <li>Server Game Management</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h4>Language</h4>
+        <p>Indonesian, of course, but I know a bit of speak english</p>
+      </div>
+    </div>
+  </div>
+  <div id="win-work" class="win" onmousedown="bringFront('win-work')">
+    <div class="win-bar" id="winbar-work">
+      <span class="win-title">work</span>
+      <button class="win-close" onclick="closeWin('work')">✕</button>
+    </div>
+    <div class="win-body">
+      <p class="work-intro">Jadi ini beberapa hasil karya dari waktu smp &ndash; smk, so nice :D</p>
+      <div class="skill-grid">
+        <div>
+          <h4>Skills</h4>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>PHP Basic</li>
+            <li>Character Design Sketch</li>
+            <li>UI Design Basic</li>
+            <li>Server Management Beginner</li>
+            <li>3D Modeling Poly</li>
+            <li>Pixel Art</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Figma</li>
+            <li>Godot</li>
+            <li>QTDesigner</li>
+            <li>Blockbench</li>
+            <li>Adobe Photoshop</li>
+            <li>Krita &amp; Aseprite</li>
+            <li>Visual Code Studio</li>
+          </ul>
+        </div>
+      </div>
+
+      <h4 class="art-title">3D Art</h4>
+      <div class="art-grid" oncontextmenu="return false;">
+        <div class="art-item"><img src="assets/3d-1.webp" alt="3D 1" /></div>
+        <div class="art-item"><img src="assets/3d-2.webp" alt="3D 2" /></div>
+        <div class="art-item"><img src="assets/3d-3.webp" alt="3D 3" /></div>
+        <div class="art-item"><img src="assets/3d-4.webp" alt="3D 4" /></div>
+      </div>
+
+      <h4 class="art-title">2D Art</h4>
+      <div class="art-grid" oncontextmenu="return false;">
+        <div class="art-item"><img src="assets/2d-1.webp" alt="2D 1" /></div>
+        <div class="art-item"><img src="assets/2d-2.webp" alt="2D 2" /></div>
+        <div class="art-item"><img src="assets/2d-3.webp" alt="2D 3" /></div>
+        <div class="art-item"><img src="assets/2d-4.webp" alt="2D 4" /></div>
+      </div>
+
+      <h4 class="art-title">Development</h4>
+      <div class="art-grid">
+      <h5>Project Coming Soon... :D</h5>
+      </div>
+    </div>
+  </div>
+  <div id="win-contact" class="win" onmousedown="bringFront('win-contact')">
+    <div class="win-bar" id="winbar-contact">
+      <span class="win-title">contact</span>
+      <button class="win-close" onclick="closeWin('contact')">✕</button>
+    </div>
+    <div class="win-body">
+      <div class="contact-wrap">
+        <h3>Contact</h3>
+        <div class="contact-char">
+          <img src="assets/contact-char.webp" alt="Contact Character" />
+        </div>
+        <p class="contact-sub">Tidak bisa berbicara, Email saja</p>
+        <p class="contact-desc">
+          Ingin mengontak saya? mungkin bisa melalui tombol dibawa,
+          disitu akan langsung direct ke gmail untuk memasukan pesan
+          ke saya, so that it...
+        </p>
+        <p class="contact-email">
+          Email : <span class="email-copy" onclick="copyEmail(this)">bramantyoapk@gmail.com<span class="email-tip">Copy Email</span></span>
+        </p>
+        <button class="btn-contact"
+          onclick="window.open('https://mail.google.com/mail/?view=cm&to=bramantyoapk@gmail.com','_blank')">
+          Contact Me !
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="sheet-overlay" onclick="closeSheet()"></div>
+
+  <div id="sheet-about" class="sheet">
+    <div class="sheet-bar">
+      <span>about_me</span>
+      <button onclick="closeSheet()">✕</button>
+    </div>
+    <div class="sheet-body">
+      <div class="about-wrap">
+        <div class="avatar-box">
+          <img src="assets/avatar.webp" alt="Foto Profil" />
+        </div>
+        <div class="about-info">
+          <h3>Bramantyo APK</h3>
+          <p>Halo, Aku Bramantyo arya putra kusuma, seorang artist pemula dan founder dari <strong>TUMMAL PRODUCTION</strong></p>
+          <p>Saya fokus dalam membuat project digital seperti game, web, dan gambar/komik bergaya anime</p>
+        </div>
+      </div>
+      <div class="section">
+        <h4>Hobby</h4>
+        <ul>
+          <li>Sport (Volly)</li>
+          <li>Gaming</li>
+          <li>Drawing</li>
+          <li>Server Game Management</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h4>Language</h4>
+        <p>Indonesian, of course, but I know a bit of speak english</p>
+      </div>
+    </div>
+  </div>
+  <div id="sheet-work" class="sheet">
+    <div class="sheet-bar">
+      <span>work</span>
+      <button onclick="closeSheet()">✕</button>
+    </div>
+    <div class="sheet-body">
+      <p class="work-intro">Jadi ini beberapa hasil karya dari waktu smp - smk, so nice :D</p>
+      <div class="skill-grid">
+        <div>
+          <h4>Skills</h4>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>PHP Basic</li>
+            <li>Character Design Sketch</li>
+            <li>UI Design Basic</li>
+            <li>Server Management Beginner</li>
+            <li>3D Modeling Poly</li>
+            <li>Pixel Art</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Figma</li>
+            <li>Godot</li>
+            <li>QTDesigner</li>
+            <li>Blockbench</li>
+            <li>Adobe Photoshop</li>
+            <li>Krita & Aseprite</li>
+            <li>Visual Code Studio</li>
+          </ul>
+        </div>
+      </div>
+      <h4 class="art-title">3D Art</h4>
+      <div class="art-grid" oncontextmenu="return false;">
+        <div class="art-item"><img src="assets/3d-1.webp" alt="3D 1" /></div>
+        <div class="art-item"><img src="assets/3d-2.webp" alt="3D 2" /></div>
+        <div class="art-item"><img src="assets/3d-3.webp" alt="3D 3" /></div>
+        <div class="art-item"><img src="assets/3d-4.webp" alt="3D 4" /></div>
+      </div>
+      <h4 class="art-title">2D Art</h4>
+      <div class="art-grid" oncontextmenu="return false;">
+        <div class="art-item"><img src="assets/2d-1.webp" alt="2D 1" /></div>
+        <div class="art-item"><img src="assets/2d-2.webp" alt="2D 2" /></div>
+        <div class="art-item"><img src="assets/2d-3.webp" alt="2D 3" /></div>
+        <div class="art-item"><img src="assets/2d-4.webp" alt="2D 4" /></div>
+      </div>
+      <h4 class="art-title">Development</h4>
+      <div class="text">
+        <h5>Project Coming Soon... :D</h5>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div id="sheet-contact" class="sheet">
+    <div class="sheet-bar">
+      <span>contact</span>
+      <button onclick="closeSheet()">✕</button>
+    </div>
+    <div class="sheet-body">
+      <div class="contact-wrap">
+        <h3>Contact</h3>
+        <div class="contact-char">
+          <img src="assets/contact-char.webp" alt="Contact" />
+        </div>
+        <p class="contact-sub">Tidak bisa berbicara, Email saja</p>
+        <p class="contact-desc">Ingin mengontak saya? mungkin bisa melalui tombol dibawa...</p>
+        <p class="contact-email">Email : <span class="email-copy" onclick="copyEmail(this)">bramantyoapk@gmail.com<span class="email-tip">Copy Email</span></span></p>
+        <button class="btn-contact"
+          onclick="window.open('https://mail.google.com/mail/?view=cm&to=bramantyoapk@gmail.com','_blank')">
+          Contact Me !
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
