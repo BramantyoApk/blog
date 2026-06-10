@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function copyEmail(el) {
-  var email = 'bramantyoapk@gmail.com';
+  var email = 'bramantyo@tummal.my.id';
 
   if (navigator.clipboard) {
     navigator.clipboard.writeText(email);
